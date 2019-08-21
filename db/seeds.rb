@@ -1,6 +1,8 @@
 require_relative('../models/student')
 require_relative('../models/house')
 
+system('psql -d hogwarts -f db/hogwarts.sql') # Must been run from the top level of the project directory.
+
 house1 = House.new({'name' => 'gryffindor'})
 house2 = House.new({'name' => 'hufflepuff'})
 house3 = House.new({'name' => 'ravenclaw'})
